@@ -136,7 +136,7 @@ void student::themsv(){
 
 void student::nhapsv(){
     fstream file;
-    file.open("text2.txt",ios::app);
+    file.open("student_information.txt",ios::app);
 file<<listsv[ID].name<<endl;
 file<<listsv[ID].date<<endl;
     file.close();
@@ -167,7 +167,7 @@ xoasvtrongfile();
 
 void student::xuatsv(){
     fstream file1;
-    file1.open("text2.txt",ios::in);
+    file1.open("student_information.txt",ios::in);
                                    string dong;
                             
                                    int i = 0;
@@ -205,7 +205,7 @@ void student::xoatoanbo(){
 
 void student::xoasvtrongfile(){
     fstream file;
-    file.open("text2.txt",ios::out);
+    file.open("student_information.txt",ios::out);
     for(int i = 0 ; i<ID ; i++){
         file<<listsv[i].name<<endl;
         file<<listsv[i].date<<endl;
