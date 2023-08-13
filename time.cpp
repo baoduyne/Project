@@ -125,7 +125,7 @@ void changet(timeline& T){
 
 void savefile(timeline& T){
     fstream file;
-    file.open("text.txt",ios::app);
+    file.open("times_save.txt",ios::app);
     file<<"Hour: "<<T.outh()<<endl;
     file<<"Munite: "<<T.outm()<<endl;
     file<<"Second: "<<T.outs()<<endl;
@@ -134,7 +134,7 @@ void savefile(timeline& T){
 
 void show(){
     fstream file;
-    file.open("text.txt",ios::in);
+    file.open("times_save.txt",ios::in);
     
         string a;
         vector<string> vt;
@@ -150,7 +150,7 @@ void show(){
 
 void dell(){
     fstream file;
-    file.open("text.txt",ios::out);
+    file.open("times_save.txt",ios::out);
     file.close();
 }
 
