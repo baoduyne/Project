@@ -1,0 +1,2 @@
+ten : duy
+tuoi : 12
